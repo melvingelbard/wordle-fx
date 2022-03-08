@@ -1,15 +1,15 @@
 package wordle.wordlefx;
 
+import javafx.application.Application;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+public class Launcher extends Application {
 
-public class Launcher {
-
-    public static void main(String[] args) throws IOException {
-        WordChooser wordChooser = new WordChooser("C:/Users/mgelbard/Desktop/corncob_lowercase.txt", 5);
-        var wordle = new Wordle(wordChooser, 5);
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        WordChooser wordChooser = new WordChooser("C:/Users/mel/Desktop/corncob_lowercase.txt", 5);
+        var wordle = new Wordle(wordChooser, 6);
         GUI gui = new GUI(wordle);
-        gui.start(new Stage());
+        gui.start();
     }
 }
