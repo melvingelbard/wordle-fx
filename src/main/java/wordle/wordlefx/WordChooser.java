@@ -15,7 +15,7 @@ public class WordChooser {
      * Create a word chooser based on the path of word list
      * @param path
      */
-    WordChooser(String path, int length) throws IOException {
+    public WordChooser(String path, int length) throws IOException {
         words = Files.lines(Paths.get(path)).filter(word -> word.length() == length).toList();
     }
 

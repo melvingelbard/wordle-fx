@@ -12,7 +12,7 @@ public class Wordle {
 
     private final List<String> guesses = new ArrayList<>();
 
-    Wordle(WordChooser chooser, int nAttempts) {
+    public Wordle(WordChooser chooser, int nAttempts) {
         this.chooser = chooser;
         this.word = chooser.chooseRandomWord();
         this.nAttempts = nAttempts;
