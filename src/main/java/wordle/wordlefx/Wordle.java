@@ -3,16 +3,14 @@ package wordle.wordlefx;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class Wordle {
 
     private final WordChooser chooser;
     private final int nAttempts;
+    private final String word;
 
-    private String word;
-
-    private List<String> guesses = new ArrayList<>();
+    private final List<String> guesses = new ArrayList<>();
 
     Wordle(WordChooser chooser, int nAttempts) {
         this.chooser = chooser;
@@ -31,8 +29,8 @@ public class Wordle {
     /**
      * Return an array of @{link Feedback} representing the
      * state of each character in the given word.
-     * @param currentWord
-     * @return
+     * @param currentWord the word to submit
+     * @return feedback array (one Feedback per character)
      */
     // TODO: If there are 2 occurrences of letter, first one might be orange but not second! Fix that
     Feedback[] submit(String currentWord) throws IOException {
@@ -62,11 +60,6 @@ public class Wordle {
 
     public List<String> getGuesses() {
         return guesses;
-    }
-
-    public void addGuess(String guess) {
-        if (guess.length() == word.length())
-            guesses.add(guess);
     }
 
     boolean isValid(String currentWord) {
