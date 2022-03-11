@@ -1,4 +1,4 @@
-package wordle.wordlefx;
+package wordle;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

@@ -1,4 +1,4 @@
-package wordle.wordlefx;
+package wordle;
 
 import javafx.geometry.Insets;
 import javafx.scene.Scene;

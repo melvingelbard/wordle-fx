@@ -1,4 +1,4 @@
-package wordle.wordlefx;
+package wordle;
 
 public enum Feedback {
     CORRECT,

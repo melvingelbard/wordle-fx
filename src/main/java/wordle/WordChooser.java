@@ -1,4 +1,4 @@
-package wordle.wordlefx;
+package wordle;
 
 import java.io.IOException;
 import java.nio.file.Files;
