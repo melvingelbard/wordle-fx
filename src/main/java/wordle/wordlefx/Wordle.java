@@ -7,6 +7,7 @@ import java.util.List;
 public class Wordle {
 
     private final WordChooser chooser;
+    private final List<String> words;
     private final int nAttempts;
     private final String word;
 
@@ -14,7 +15,15 @@ public class Wordle {
 
     public Wordle(WordChooser chooser, int nAttempts) {
         this.chooser = chooser;
+        this.words = chooser.getWords();
         this.word = chooser.chooseRandomWord();
+        this.nAttempts = nAttempts;
+    }
+
+    public Wordle(String word, List<String> words, int nAttempts) {
+        this.chooser = null;
+        this.words = words;
+        this.word = word;
         this.nAttempts = nAttempts;
     }
 
@@ -63,6 +72,6 @@ public class Wordle {
     }
 
     boolean isValid(String currentWord) {
-        return chooser.isValid(currentWord.toLowerCase());
+        return words.contains(currentWord.toLowerCase());
     }
 }

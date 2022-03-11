@@ -120,7 +120,7 @@ public class GUI {
             if (wordle.getGuesses().contains(wordle.getWord()))
                 System.out.println("YOU WON!!");
             else
-                System.out.println("YOU LOST!!");
+                System.out.println("YOU LOST!! THE WORD WAS: " + wordle.getWord().toUpperCase());
             Thread.sleep(10000);
         } catch (InterruptedException ex) {
             ex.printStackTrace();
