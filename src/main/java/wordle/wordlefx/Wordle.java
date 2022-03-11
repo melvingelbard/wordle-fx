@@ -33,7 +33,7 @@ public class Wordle {
      * @return feedback array (one Feedback per character)
      */
     // TODO: If there are 2 occurrences of letter, first one might be orange but not second! Fix that
-    Feedback[] submit(String currentWord) throws IOException {
+    public Feedback[] submit(String currentWord) throws IOException {
         if (currentWord.length() != word.length())
             return new Feedback[5];
         if (currentWord.toLowerCase().equals(word))
