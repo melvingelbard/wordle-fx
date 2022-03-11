@@ -24,6 +24,10 @@ public class WordChooser {
         return chosenWord;
     }
 
+    public List<String> getWords() {
+        return words;
+    }
+
     boolean isValid(String word) {
         return words.contains(word);
     }
