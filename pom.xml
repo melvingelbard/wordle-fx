@@ -4,7 +4,7 @@
 
     <groupId>io.github.melvingelbard</groupId>
     <artifactId>WordleFX</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>WordleFX</name>
     <packaging>jar</packaging>
     <description>A JavaFX implementation of Wordle</description>
