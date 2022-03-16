@@ -28,7 +28,7 @@
         <connection>scm:git:https://github.com/melvingelbard/wordle-fx.git</connection>
         <developerConnection>scm:git:git@github.com:melvingelbard/wordle-fx.git</developerConnection>
         <url>https://github.com/melvingelbard/wordle-fx/tree/main</url>
-      <tag>WordleFX-1.0</tag>
+      <tag>WordleFX-1.0.1</tag>
   </scm>
 
     <distributionManagement>
